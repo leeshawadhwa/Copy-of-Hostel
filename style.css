@@ -8,13 +8,13 @@
 header {
   width: 100%;
   height: 100%;
-  background-image:linear-gradient(rgba(5, 26, 103, 0.3), rgba(163, 48, 48, 0.15)), url("IMG-20220825-WA0003.jpg");
+  background-image:linear-gradient(rgba(45, 56, 97, 0.3), rgba(172, 158, 158, 0.18)), url("IMG-20220825-WA0003.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 
-/* new nav bar */
+/* nav bar */
 canvas {
   display: inline-block;
 }
@@ -54,7 +54,6 @@ body {
   background-image:linear-gradient(rgba(5, 26, 103, 0.3), rgba(163, 48, 48, 0.15)), url("Photos/IMG-20220825-WA0003.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)), url("Photos/IMG-20220825-WA0003.jpg"); */
 }
 
 
@@ -114,7 +113,7 @@ nav a:nth-child(1):after {
 }
 
 nav a:nth-child(2):before {
-  background-color: #00e2ff;
+  background-color: #040b96;
 }
 
 nav a:nth-child(2):after {
@@ -141,7 +140,7 @@ nav a:nth-child(3):after {
 }
 
 nav a:hover {
-  color: rgb(15, 4, 116);
+  color: rgb(9, 2, 68);
 }
 
 nav a:hover:before,
@@ -166,7 +165,7 @@ nav a:nth-child(3):hover ~ #indicator {
   left: 140%;
   width:150%;
   background: rgb(247,150,192);
-  background: radial-gradient(circle, rgba(247,150,192,1) 0%, rgba(118,174,241,1) 100%);
+  background: radial-gradient(circle, rgb(234, 174, 200) 0%, rgb(11, 76, 156) 100%);
   line-height: 34px;
   padding: 0;
   border: none;
@@ -373,7 +372,7 @@ ul{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #e91e63;
+	background-color: #0062b8;
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
