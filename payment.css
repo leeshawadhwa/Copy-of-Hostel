@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+
+:root {
+    /* Variable colours */
+    --bg-color: #021c38;
+    --primary-color: rgba(58, 90, 124, 0.941);
+    --secondary-color: #E8EAE7;
+    --link-color: #65A8F8;
+    --warning-color: rgb(255, 255, 255);
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+
+
+h1 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+a {
+    color: var(--link-color, #65A8F8);
+    text-decoration: none;
+}
+
+.warning {
+    color: var(--warning-color, #FF0000);
+    font-weight: 200;
+}
+
+header {
+    width: 50%;
+    min-height: 15vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+header h1#title {
+    margin: auto;
+}
+
+header h1#title img {
+    width: 22px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 25% 1fr 25%;
+    grid-template-rows: 59px 1fr;
+}
+body {
+    background-color: #021c38;
+    color: var(--secondary-color, #E8EAE7);
+}
+
+ p#description {
+    background: var(--primary-color, #53595E);
+    padding: 20px;
+    border-radius: 5px 5px 0 0;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    text-align: center;
+    align-self: center;
+}
+
+form#survey-form {
+    background: var(--primary-color, #53595E);
+    padding: 0 20px 20px 20px;
+    border-radius: 0 0 5px 5px;
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+form#survey-form input.name,
+form#survey-form input.email,
+form#survey-form input.number,
+form#survey-form select {
+    color: #000000;
+    background: var(--secondary-color, #E8EAE7);
+    color: var(--primary-color, #53595E);
+    width: 90%;
+    height: 30px;
+    margin: 0 0 20px 20px;
+    padding: 2px 5px;
+    border: 0;
+    border-radius: 5px;
+}
+
+form#survey-form select {
+    width: 92%;
+}
+
+form#survey-form input[type="radio"]:first-child,
+form#survey-form input[type="checkbox"]:first-child,
+form#survey-form textarea {
+    background: var(--secondary-color, #E8EAE7);
+    margin: 0 0 20px 20px;
+    border: 0;
+}
+
+form#survey-form textarea {
+    color: var(--primary-color, #5e535a);
+    width: 90%;
+    height: 80px;
+    padding: 5px 5px;
+    border: 0;
+    border-radius: 5px;
+    resize: none;
+}
+
+form#survey-form div.grid {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30px, 30px;
+}
+
+form#survey-form label,
+form#survey-form div.label {
+    margin: 5px 20px 0 0;
+    text-align: right;
+}
+
+form#survey-form button {
+    width: 200px;
+    position: relative;
+    left: 50%;
+    margin: 5px 0 0 -100px;
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: #222;
+    color: #E8EAE7;
+    cursor: pointer;
+}
+
+    form#survey-form button:hover {
+        background: rgb(255, 255, 255);
+        color: black;
+    }
+
+form#survey-form .submit .button-info {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+footer {
+    width: 50%;
+    min-height: 10vh;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+/* Media query for smaller laptop / tablet devices */
+@media (max-width: 1024px) {
+    header {
+        width: 100%;
+        min-height: 15vh;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 5% 1fr 5%;
+        grid-template-rows: 59px 1fr;
+    }
+
+    footer {
+        width: 100%;
+        min-height: 15vh;
+        justify-content: center;
+    }
+}
+
+/* Media query for all phone sized devices */
+@media (max-width: 768px) {
+    form#survey-form div.grid {
+        grid-template-columns: 100%;
+    }
+
+    form#survey-form label,
+    form#survey-form div.label {
+        margin: 10px 0;
+        text-align: left;
+    }
+
+    form#survey-form input.name,
+    form#survey-form input.email,
+    form#survey-form input.number,
+    form#survey-form select {
+        width: 95%;
+        margin: 0;
+    }
+
+    form#survey-form select {
+        width: 98%;
+    }
+
+    form#survey-form input[type="radio"]:first-child,
+    form#survey-form input[type="checkbox"]:first-child,
+    form#survey-form textarea {
+        margin: 5px 0 20px 0;
+    }
+
+    form#survey-form textarea {
+        width: 95%;
+    }
+
+    form#survey-form button {
+        left: 0;
+        font-size: 20px;
+        width: 97%;
+        padding: 12px 0;
+        margin: 20px 0;
+    }
+
+    form#survey-form .submit .button-info {
+        font-size: 0.9em;
+        width: 100%;
+        margin: 10px auto;
+    }
+}
